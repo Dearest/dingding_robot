@@ -1,0 +1,23 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chronic (0.10.2)
+    httparty (0.15.6)
+      multi_xml (>= 0.5.2)
+    mini_portile2 (2.2.0)
+    multi_xml (0.6.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
+    whenever (0.9.7)
+      chronic (>= 0.6.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  httparty
+  nokogiri
+  whenever
+
+BUNDLED WITH
+   1.15.2
