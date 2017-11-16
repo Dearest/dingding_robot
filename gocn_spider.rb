@@ -1,13 +1,13 @@
 
 class GocnSpider
   HOME_PATH = 'https://gocn.io/'.freeze
-  BOT = 'https://oapi.dingtalk.com/robot/send?access_token=5afe9602cf3db60295c35c5dc1fc3f158a6a7b8b1cc53f785663043031572695'.freeze
+  ROBOT = 'https://oapi.dingtalk.com/robot/send?access_token=xxxx'.freeze
 
   def self.scheduler
     body = { msgtype: 'text', text: { content: news_content } }.to_json
     options = { headers: { 'Content-Type' => 'application/json' },
                 body: body }
-    HTTParty.post(BOT, options)
+    HTTParty.post(ROBOT, options)
   end
 
   private

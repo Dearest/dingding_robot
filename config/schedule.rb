@@ -18,6 +18,6 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-every :day, at: '13:45 pm' do
-  command "/bin/bash -l -c 'cd /home/jachin/RubymineProjects/gocn && ruby main.rb'"
+every :day, at: '14:00 pm' do
+  command 'cd /home/jachin/RubymineProjects/gocn && ruby main.rb'
 end
