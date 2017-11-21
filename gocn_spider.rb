@@ -36,7 +36,7 @@ class GocnSpider
     def parse_page(page_url)
       puts page_url
       page_doc = Nokogiri::HTML.parse(HTTParty.get(page_url).body)
-      page_doc.css('div.content.markitup-box p').map(&:text)
+      page_doc.css('div.content.markitup-box').map(&:text)
     end
   end
 
